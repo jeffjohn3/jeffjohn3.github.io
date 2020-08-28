@@ -14,7 +14,8 @@
   border-radius: 8px;
   max-width: 400px;
   width: 90vw;
-  padding-bottom: 141.453%;
+  /* padding-bottom: 141.453%; */
+  padding-bottom: 129.411%;
   font-size: 0;
 }
 .react-pdf__Document {
@@ -35,7 +36,8 @@
   border-radius: 8px;
 }
 .react-pdf__Page__svg:empty {
-  padding-bottom: 141.453%;
+  padding-bottom: 129.411%;
+  /* padding-bottom: 141.453%; */
 }
 .react-pdf__Page__svg svg {
   border-radius: 8px;
