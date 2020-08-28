@@ -8,7 +8,7 @@ export const Content = {
       Location: "Seattle, Washington",
       Image: "imgs/experiences/amazon.jpg",
       Description:
-        "This summer was my first introduction to the software engineering industry, but the experienced developers and mentors on my team made the steep learning curve feel simple.  Despite my initial lack of experience, I was able to make meaningful contributions and appreciate Amazon's fast-paced work environment and culture of customer-obsession.",
+        'This summer was my first introduction to the software engineering industry, but the developers and mentors on my team made it easy to cope with the steep learning curve.  Despite my initial lack of experience, I was able to make meaningful contributions and appreciate Amazon\'s fast-paced work environment and culture of "customer-obsession."',
     },
     {
       Title: "UC Berkeley",
