@@ -1,0 +1,97 @@
+.react-pdf__message {
+  background: linear-gradient(
+    125.75deg,
+    white 0%,
+    #dee4f0 33%,
+    white 66%,
+    #dee4f0 100%
+  );
+  background-size: 200% 100%;
+  animation-name: loading-animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90vw;
+  padding-bottom: 141.453%;
+  font-size: 0;
+}
+.react-pdf__Document {
+  border-radius: 8px;
+  max-width: 100%;
+  position: relative;
+}
+.react-pdf__Document:hover .page-controls {
+  opacity: 1;
+}
+.react-pdf__Page {
+  max-width: 400px;
+  width: 90vw;
+}
+.react-pdf__Page__svg {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 8px;
+}
+.react-pdf__Page__svg:empty {
+  padding-bottom: 141.453%;
+}
+.react-pdf__Page__svg svg {
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90vw;
+  height: auto;
+  display: block;
+  background-color: white;
+}
+.page-controls {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: white;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity ease-in-out 0.2s;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 4px;
+}
+.page-controls span {
+  font: inherit;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+}
+.page-controls button {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border: 0;
+  font: inherit;
+  font-size: 0.8em;
+  border-radius: 4px;
+}
+.page-controls button:enabled:hover {
+  cursor: pointer;
+}
+.page-controls button:enabled:hover,
+.page-controls button:enabled:focus {
+  background-color: #e6e6e6;
+}
+.page-controls button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.page-controls button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@description: Easily display PDFs in your React app.;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+button {
+  font-family: inherit;
+}
