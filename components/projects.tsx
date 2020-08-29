@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Project from "../components/project";
 import Section from "../components/section";
-import { useMediaQuery, Divider } from "@material-ui/core";
+import { useMediaQuery } from "@material-ui/core";
 
 export default function Projects() {
   const md = useMediaQuery("(min-width: 768px)");

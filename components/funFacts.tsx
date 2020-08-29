@@ -2,7 +2,6 @@ import { Content } from "../src/content";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Book from "../components/book";
 import { useMediaQuery } from "@material-ui/core";
 import Section from "../components/section";
 

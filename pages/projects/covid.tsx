@@ -1,16 +1,10 @@
-import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
-import Projects from "../../components/projects";
-import Section from "../../components/section";
 import Footer from "../../components/footer";
-import { Content } from "../../src/content";
-import { Stylesheet } from "react-native";
 import Pdf from "../../components/pdf";
 import { Button } from "@material-ui/core";
 
@@ -42,10 +36,7 @@ export default function Home() {
                 </Button>
               </div>
               <div style={{ textAlign: "center", margin: "1.5vh 0 4vh 0" }}>
-                <Button
-                  variant="contained"
-                  href="https://drive.google.com/file/d/1ROjBSAIPU8twLgdIQa4XBI78sm5OIiMU/view?usp=sharing"
-                >
+                <Button variant="contained" href="/covidIpython.html" download>
                   View Source
                 </Button>
               </div>

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.1.266/pdf.worker.js`;
-import "react-pdf/dist/Page/AnnotationLayer.css";
-
-import "../styles/Sample.less";
 import { Paper } from "@material-ui/core";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "../styles/Sample.less";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.1.266/pdf.worker.js`;
 
 const options = {
   cMapUrl: "cmaps/",

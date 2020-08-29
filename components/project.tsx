@@ -1,8 +1,4 @@
 import { Paper, useMediaQuery } from "@material-ui/core";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import { DetailedHTMLProps, AnchorHTMLAttributes, useState } from "react";
 
 interface Props {
   Image: string;

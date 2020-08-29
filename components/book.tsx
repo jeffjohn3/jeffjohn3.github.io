@@ -1,5 +1,4 @@
 import { Paper, useMediaQuery } from "@material-ui/core";
-import { DetailedHTMLProps, AnchorHTMLAttributes, useState } from "react";
 
 interface Props {
   Title: string;

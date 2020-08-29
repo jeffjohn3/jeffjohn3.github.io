@@ -1,10 +1,7 @@
 import React from "react";
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
-import Projects from "../../components/projects";
-import Section from "../../components/section";
 import Footer from "../../components/footer";
-import { Content } from "../../src/content";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -37,12 +34,12 @@ export default function Home() {
                     process programmatic events
                   </li>
                   <li>
-                    Integrat notifications with existing issues API and ensure
+                    Integrate notifications with existing issues API and ensure
                     backwards compatibility with previous projects
                   </li>
                   <li>
-                    Create and designe an internal React website hosted using
-                    AWS ECS, CDK, Lambda, and other internal services
+                    Create and design an internal React website hosted using AWS
+                    ECS, CDK, Lambda, and other internal services
                   </li>
                 </ul>
               </div>

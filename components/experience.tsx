@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { Content } from "../src/content";
 import Divider from "@material-ui/core/Divider";
-import { responsiveFontSizes, useMediaQuery } from "@material-ui/core";
+import { useMediaQuery } from "@material-ui/core";
 
 interface Props {
   Title: string;

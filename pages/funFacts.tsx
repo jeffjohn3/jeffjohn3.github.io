@@ -1,5 +1,4 @@
 import NavBar from "../components/navBar";
-import Projects from "../components/projects";
 import React from "react";
 import Header from "../components/header";
 import Books from "../components/books";
