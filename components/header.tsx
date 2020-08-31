@@ -39,9 +39,19 @@ export default function Header() {
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"
-      ></script>
+        dangerouslySetInnerHTML={{
+          __html: `
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'UA-167704928-1');
+            </script>`,
+        }}
+      />
     </Head>
   );
 }
