@@ -18,17 +18,20 @@ const hello = {
 
 export default function About() {
   const md = useMediaQuery("(min-width: 768px)");
-  ReactGA.initialize("UA-167704928-1");
-  ReactGA.pageview(window.location.pathname + window.location.search);
-
-  const event = (category, action, label) => {
-    ReactGA.event({
-      category: category,
-      action: action,
-      label: label,
-    });
+  const captureClick = () => {
+    if (typeof window !== "undefined") {
+      ReactGA.initialize("UA-167704928-1");
+      ReactGA.pageview(window.location.pathname + window.location.search);
+      const event = (category, action, label) => {
+        ReactGA.event({
+          category: category,
+          action: action,
+          label: label,
+        });
+      };
+      event("Link", "Click", "Resume");
+    }
   };
-
   return (
     <Container fluid="sm">
       <Row>
@@ -44,9 +47,7 @@ export default function About() {
               variant="contained"
               // color="primary"
               href="https://drive.google.com/open?id=1oHJdDL7zsCLQIvnYpSurcefk98B5zk4W"
-              onClick={() => {
-                event("Link", "Click", "Resume");
-              }}
+              onClick={captureClick}
             >
               Resume
             </Button>

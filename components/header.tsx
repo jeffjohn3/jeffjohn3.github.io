@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 
 export default function Header() {
@@ -17,6 +18,26 @@ export default function Header() {
       "https://twitter.com/JeffreyKim0",
     ],
   };
+  const googleAnalytics =
+    typeof window !== "undefined" ? (
+      <React.Fragment />
+    ) : (
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-167704928-1');
+      </script>`,
+        }}
+      />
+    );
+
   return (
     <Head>
       <link rel="icon" href="/favicon.png" />
@@ -31,27 +52,12 @@ export default function Header() {
       />
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta http-equiv="content-language" content="en-us" />
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-
+      {googleAnalytics}
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'UA-167704928-1');
-            </script>`,
-        }}
-      />
     </Head>
   );
 }
