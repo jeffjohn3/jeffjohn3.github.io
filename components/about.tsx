@@ -6,6 +6,7 @@ import Divider from "@material-ui/core/Divider";
 import Experience from "./experience";
 import { useMediaQuery } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
+import ReactGA from "react-ga";
 
 const hello = {
   fontWeight: "bold",
@@ -17,6 +18,16 @@ const hello = {
 
 export default function About() {
   const md = useMediaQuery("(min-width: 768px)");
+  ReactGA.initialize("UA-167704928-1");
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
+  const event = (category, action, label) => {
+    ReactGA.event({
+      category: category,
+      action: action,
+      label: label,
+    });
+  };
 
   return (
     <Container fluid="sm">
@@ -33,6 +44,9 @@ export default function About() {
               variant="contained"
               // color="primary"
               href="https://drive.google.com/open?id=1oHJdDL7zsCLQIvnYpSurcefk98B5zk4W"
+              onClick={() => {
+                event("Link", "Click", "Resume");
+              }}
             >
               Resume
             </Button>
