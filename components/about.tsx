@@ -19,19 +19,18 @@ const hello = {
 export default function About() {
   const md = useMediaQuery("(min-width: 768px)");
   const captureClick = () => {
-    if (typeof window !== "undefined") {
-      ReactGA.initialize("UA-167704928-1");
-      ReactGA.pageview(window.location.pathname + window.location.search);
-      const event = (category, action, label) => {
-        ReactGA.event({
-          category: category,
-          action: action,
-          label: label,
-        });
-      };
-      event("Link", "Click", "Resume");
-    }
+    ReactGA.initialize("UA-167704928-1");
+    // ReactGA.pageview(window.location.pathname + window.location.search);
+    const event = (category, action, label) => {
+      ReactGA.event({
+        category: category,
+        action: action,
+        label: label,
+      });
+    };
+    event("Link", "Click", "Resume");
   };
+
   return (
     <Container fluid="sm">
       <Row>

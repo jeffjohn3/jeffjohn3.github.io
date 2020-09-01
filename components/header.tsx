@@ -18,25 +18,24 @@ export default function Header() {
       "https://twitter.com/JeffreyKim0",
     ],
   };
-  const googleAnalytics =
-    typeof window !== "undefined" ? (
-      <React.Fragment />
-    ) : (
+  const googleAnalytics = (
+    <React.Fragment>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"
+      />
       <script
         dangerouslySetInnerHTML={{
           __html: `
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167704928-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'UA-167704928-1');
-      </script>`,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-167704928-1');
+        `,
         }}
       />
-    );
+    </React.Fragment>
+  );
 
   return (
     <Head>
