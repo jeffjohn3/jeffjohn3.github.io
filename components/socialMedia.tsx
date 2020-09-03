@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { SocialIcon } from "react-social-icons";
+import ReactGA from "react-ga";
 
 const socialIcon = {
   size: "50",
@@ -9,6 +10,20 @@ const socialIcon = {
 };
 
 export default function SocialMedia() {
+  const captureClick = (name) => {
+    return () => {
+      ReactGA.initialize("UA-167704928-1");
+      const event = (category, action, label) => {
+        ReactGA.event({
+          category: category,
+          action: action,
+          label: label,
+        });
+      };
+      event("Link", "Click", "Resume");
+    };
+  };
+
   return (
     <Container fluid="md">
       <Row>
@@ -18,18 +33,21 @@ export default function SocialMedia() {
             url="https://www.linkedin.com/in/jeffreyki-m"
             bgColor="#365EAC"
             fgColor="white"
+            onClick={captureClick("LinkedIn")}
           />
           <SocialIcon
             style={socialIcon}
             url="https://www.instagram.com/jeffjohn3"
             bgColor="#DB534B"
             fgColor="white"
+            onClick={captureClick("Instagram")}
           />
           <SocialIcon
             style={socialIcon}
             url="https://github.com/jeffjohn3"
             bgColor="#3C3C3C"
             fgColor="white"
+            onClick={captureClick("Github")}
           />
           <SocialIcon
             style={socialIcon}
@@ -37,12 +55,14 @@ export default function SocialMedia() {
             label="email"
             bgColor="#DB534B"
             fgColor="white"
+            onClick={captureClick("Email")}
           />
           <SocialIcon
             style={socialIcon}
             url="https://facebook.com/jeffjohn333"
             bgColor="#365EAC"
             fgColor="white"
+            onClick={captureClick("Facebook")}
           />
         </Col>
       </Row>

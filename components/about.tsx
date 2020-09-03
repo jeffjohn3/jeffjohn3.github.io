@@ -20,7 +20,6 @@ export default function About() {
   const md = useMediaQuery("(min-width: 768px)");
   const captureClick = () => {
     ReactGA.initialize("UA-167704928-1");
-    // ReactGA.pageview(window.location.pathname + window.location.search);
     const event = (category, action, label) => {
       ReactGA.event({
         category: category,
