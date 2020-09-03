@@ -34,7 +34,7 @@ export default function About() {
               variant="contained"
               // color="primary"
               href="https://drive.google.com/open?id=1oHJdDL7zsCLQIvnYpSurcefk98B5zk4W"
-              onClick={captureClick}
+              onClick={captureClick("Resume")}
             >
               Resume
             </Button>
