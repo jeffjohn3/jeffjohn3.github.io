@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { SocialIcon } from "react-social-icons";
-import ReactGA from "react-ga";
+import { captureClick } from "./utils/googleAnalytics";
 
 const socialIcon = {
   size: "50",
@@ -10,20 +10,6 @@ const socialIcon = {
 };
 
 export default function SocialMedia() {
-  const captureClick = (name) => {
-    return () => {
-      ReactGA.initialize("UA-167704928-1");
-      const event = (category, action, label) => {
-        ReactGA.event({
-          category: category,
-          action: action,
-          label: label,
-        });
-      };
-      event("Link", "Click", "Resume");
-    };
-  };
-
   return (
     <Container fluid="md">
       <Row>

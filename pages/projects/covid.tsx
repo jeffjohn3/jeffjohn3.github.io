@@ -7,6 +7,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Pdf from "../../components/pdf";
 import { Button } from "@material-ui/core";
+import { captureClick } from "../../components/utils/googleAnalytics";
 
 export default function Home() {
   return (
@@ -30,13 +31,19 @@ export default function Home() {
               <div style={{ textAlign: "center", margin: "4vh 0 0 0" }}>
                 <Button
                   variant="contained"
+                  onClick={captureClick("Covid PDF")}
                   href="https://drive.google.com/file/d/1oSp0RIFDIMyxUZMWIJFRwM3mwztN5h8Y/view?usp=sharing"
                 >
                   View PDF
                 </Button>
               </div>
               <div style={{ textAlign: "center", margin: "1.5vh 0 4vh 0" }}>
-                <Button variant="contained" href="/covidIpython.html" download>
+                <Button
+                  variant="contained"
+                  onClick={captureClick("Covid iPython")}
+                  href="/covidIpython.html"
+                  download
+                >
                   View Source
                 </Button>
               </div>

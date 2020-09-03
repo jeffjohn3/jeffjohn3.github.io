@@ -6,7 +6,7 @@ import Divider from "@material-ui/core/Divider";
 import Experience from "./experience";
 import { useMediaQuery } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import ReactGA from "react-ga";
+import { captureClick } from "./utils/googleAnalytics";
 
 const hello = {
   fontWeight: "bold",
@@ -18,17 +18,6 @@ const hello = {
 
 export default function About() {
   const md = useMediaQuery("(min-width: 768px)");
-  const captureClick = () => {
-    ReactGA.initialize("UA-167704928-1");
-    const event = (category, action, label) => {
-      ReactGA.event({
-        category: category,
-        action: action,
-        label: label,
-      });
-    };
-    event("Link", "Click", "Resume");
-  };
 
   return (
     <Container fluid="sm">
