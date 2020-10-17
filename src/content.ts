@@ -141,7 +141,7 @@ export const Content = {
       Author: "Dale Carnegie",
       Image: "imgs/books/winFriendsAndInfluencePeople.jpg",
       Link:
-        "https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things",
+        "https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People",
       Description:
         "Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives. As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.",
     },
