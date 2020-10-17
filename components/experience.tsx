@@ -29,8 +29,6 @@ export default function Experience(props: Props) {
               aspectRatio: "1",
             }}
           />
-
-          {/* <Image alt="Hi" key={`1:1`} src={props.Image} aspectRatio="1:1" /> */}
         </Col>
         <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 2 }}>
           <h1 style={{ fontSize: "1.5em" }}> {props.Title} </h1>
@@ -39,7 +37,6 @@ export default function Experience(props: Props) {
           <div> {props.Description} </div>
         </Col>
       </Row>
-      <Divider style={{ margin: "6vh 8.4%" }} variant="middle" />
     </Container>
   );
 }

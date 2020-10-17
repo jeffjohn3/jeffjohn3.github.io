@@ -7,6 +7,7 @@ import Experience from "./experience";
 import { useMediaQuery } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { captureClick } from "./utils/googleAnalytics";
+import React from "react";
 
 const hello = {
   fontWeight: "bold",
@@ -53,8 +54,16 @@ export default function About() {
       </Row>
       <Divider style={{ margin: "6vh 8.4%" }} variant="middle" />
 
-      {Content.Experiences.map((experience) => (
-        <Experience {...experience} />
+      {Content.Experiences.map((experience, index) => (
+        <div>
+          <Experience {...experience} />
+
+          {index != Content.Experiences.length - 1 ? (
+            <Divider style={{ margin: "6vh 8.4%" }} variant="middle" />
+          ) : (
+            <React.Fragment />
+          )}
+        </div>
       ))}
     </Container>
   );
