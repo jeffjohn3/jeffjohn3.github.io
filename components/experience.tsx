@@ -26,7 +26,7 @@ export default function Experience(props: Props) {
               marginTop: md ? "0" : "4vh",
               borderRadius: "18px",
               height: "auto",
-              aspectRatio: "1",
+              aspectRatio: "1:1",
             }}
           />
 

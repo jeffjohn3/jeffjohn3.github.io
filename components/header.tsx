@@ -43,14 +43,14 @@ export default function Header() {
       <title>Jeffrey Kim's Personal Website</title>
       <meta
         name="keywords"
-        content="Jeffrey, Berkeley, Kim, Murrieta, UC Berkeley, Cal, Website, California"
+        content="Jeffrey, Berkeley, Kim, Murrieta, UC Berkeley, Cal, Website, Murrieta Valley High School"
       />
       <meta
         name="description"
         content="Personal website of Jeffrey Kim, a college student studying Electrical Engineering and Computer Science at the University of California, Berkeley."
       />
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <meta http-equiv="content-language" content="en-us" />
+      <meta httpEquiv="content-language" content="en-us" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
