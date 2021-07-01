@@ -111,5 +111,39 @@ export const Content = {
       Description:
         "A young woman walks into a laboratory. Over the past two years, she has transformed almost every aspect of her life. She has quit smoking, run a marathon, and been promoted at work. The patterns inside her brain, neurologists discover, have fundamentally changed.",
     },
+    {
+      Title: "The Price We Pay",
+      Author: "Marty Makary",
+      Image: "imgs/books/priceWePay.jpg",
+      Link: "https://www.goodreads.com/book/show/42373033-the-price-we-pay",
+      Description:
+        "One in five Americans now has medical debt in collections and rising health care costs today threaten every small business in America. Dr. Makary, one of the nation's leading health care experts, travels across America and details why health care has become a bubble. Drawing from on-the-ground stories, his research, and his own experience, The Price We Pay paints a vivid picture of price-gouging, middlemen, and a series of elusive money games in need of a serious shake-up. Dr. Makary shows how so much of health care spending goes to things that have nothing to do with health and what you can do about it. Dr. Makary challenges the medical establishment to remember medicine's noble heritage of caring for people when they are vulnerable.",
+    },
+    {
+      Title: "The Mamba Mentality",
+      Author: "Kobe Bryant",
+      Image: "imgs/books/mambaMentality.jpg",
+      Link: "https://www.goodreads.com/book/show/40230101-the-mamba-mentality",
+      Description:
+        "In the wake of his retirement from professional basketball, Kobe “The Black Mamba” Bryant has decided to share his vast knowledge and understanding of the game to take readers on an unprecedented journey to the core of the legendary “Mamba mentality.” Citing an obligation and an opportunity to teach young players, hardcore fans, and devoted students of the game how to play it “the right way,” The Mamba Mentality takes us inside the mind of one of the most intelligent, analytical, and creative basketball players ever.",
+    },
+    {
+      Title: "The Design of Everyday Things",
+      Author: "Donald Norman",
+      Image: "imgs/books/designOfEverydayThings.jpg",
+      Link:
+        "https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things",
+      Description:
+        "Anyone who designs anything to be used by humans -- from physical objects to computer programs to conceptual tools -- must read this book, and it is an equally tremendous read for anyone who has to use anything created by another human. It could forever change how you experience and interact with your physical surroundings, open your eyes to the perversity of bad design and the desirability of good design, and raise your expectations about how things should be designed.",
+    },
+    {
+      Title: "How to Win Friends and Influence People",
+      Author: "Dale Carnegie",
+      Image: "imgs/books/winFriendsAndInfluencePeople.jpg",
+      Link:
+        "https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People",
+      Description:
+        "Since its release in 1936, How to Win Friends and Influence People has sold more than 15 million copies. Dale Carnegie's first book is a timeless bestseller, packed with rock-solid advice that has carried thousands of now famous people up the ladder of success in their business and personal lives. As relevant as ever before, Dale Carnegie's principles endure, and will help you achieve your maximum potential in the complex and competitive modern age.",
+    },
   ],
 };
