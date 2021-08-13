@@ -18,7 +18,7 @@
     "bootstrap": "^4.5.2",
     "less": "^3.12.2",
     "lodash": "^4.17.20",
-    "next": "9.5.2",
+    "next": "11.1.0",
     "next-images": "^1.4.1",
     "next-transpile-modules": "^4.1.0",
     "path": "^0.12.7",
