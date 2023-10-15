@@ -1,13 +1,16 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "homepage": "https://github.com/jeffjohn3/jeffjohn3.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "clean": "rm -rf node_modules"
+    "clean": "rm -rf node_modules",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
