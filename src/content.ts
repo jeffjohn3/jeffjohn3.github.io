@@ -17,15 +17,7 @@ export const Content = {
       Image: "imgs/experiences/berkeley.jpeg",
       Description:
         "Coming to Berkeley has been a humbling experience, one of unprecedented diversity and opportunity. My past two years at Berkeley have been challenging, pushing me to grow both academically and socially.  Berkeley strengthened my tolerance for adversity, sparked a passion for software development, and surrounded me with a cohort of intelligent and ambitious peers.",
-    },
-    {
-      Title: "Murrieta Valley High School",
-      Role: "Class of 2018",
-      Location: "Murrieta, California",
-      Image: "imgs/experiences/murrietaValley.jpg",
-      Description:
-        "MV is where it all began. I learned to think critically in Speech and Debate, appreciate computer science in Robotics, work on a team in Tennis, and articulate my ideas in Virtual Enterprise. I pursued the arts, culminating in my performance at Carnegie Hall. I won awards, from valedictorian to homecoming king to Eagle Scout. And then, I graduated, ready for the next challenge.",
-    },
+    }
   ],
   Coursework: [
     "CS 61A: Structure of Programs",
